@@ -1,0 +1,12 @@
+logs/
+bin/
+models/
+.venv/
+__pycache__/
+*.pyc
+runs/
+mlruns/
+mlartifacts/
+mlflow.db
+artifacts/
+*.gguf
