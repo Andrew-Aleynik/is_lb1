@@ -27,7 +27,9 @@ PROMPT_TOKENS = 1024
 MAX_TOKENS = 128
 LEVELS_CPU = [1, 2, 4]
 LEVELS_GPU = [1, 2, 4, 8, 16, 32]
-SLO_CPU = {"ttft_p90_s": 15.0, "tpot_median_s": 0.20}
+# CPU: TTFT p90 ≈ 2× медиана TTFT@1024 из эксп.1 (~32 с);
+# TPOT: запас над медианой эксп.2 (~0.13–0.15 с), т.к. прогноз 0.059 с на CPU занижен
+SLO_CPU = {"ttft_p90_s": 70.0, "tpot_median_s": 0.20}
 SLO_GPU = {"ttft_p90_s": 2.0, "tpot_median_s": 0.10}
 
 
